@@ -2,19 +2,19 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+	  <TargetFramework>net10.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Identity" Version="1.14.2" />
-    <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="2.0.0" />
-    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.ServiceBus" Version="5.22.2" />
-    <PackageReference Include="NServiceBus" Version="9.2.6" />
-    <PackageReference Include="NServiceBus.AzureFunctions.Worker.ServiceBus" Version="5.2.2" />
-    <PackageReference Include="NServiceBus.Extensions.Hosting" Version="3.0.1" />
-    <PackageReference Include="NServiceBus.Newtonsoft.Json" Version="4.1.0" />
+    <PackageReference Include="Azure.Identity" Version="1.21.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="2.52.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.ServiceBus" Version="5.24.0" />
+    <PackageReference Include="NServiceBus" Version="10.2.7" />
+    <PackageReference Include="NServiceBus.AzureFunctions.Worker.ServiceBus" Version="7.1.1" />
+    <PackageReference Include="NServiceBus.Extensions.Hosting" Version="4.1.0" />
+    <PackageReference Include="NServiceBus.Newtonsoft.Json" Version="5.0.1" />
     <PackageReference Include="SFA.DAS.CommitmentsV2.Messages" Version="100.0.136-prerelease-3" />
   </ItemGroup>
 

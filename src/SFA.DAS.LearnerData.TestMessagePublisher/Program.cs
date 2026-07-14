@@ -20,8 +20,8 @@ endpointConfiguration.UseNewtonsoftJsonSerializer();
 
 endpointConfiguration.SendOnly();
 
-var transport = endpointConfiguration.UseTransport<AzureServiceBusTransport>();
-transport.ConnectionString(connectionString);
+var transport = new AzureServiceBusTransport(connectionString, TopicTopology.Default);
+endpointConfiguration.UseTransport(transport);
 
 var endpointInstance = await Endpoint.Start(endpointConfiguration)
     .ConfigureAwait(false);
