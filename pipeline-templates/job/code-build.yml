@@ -23,6 +23,7 @@ jobs:
     inputs:
       command: publish
       publishWebProjects: false
+      zipAfterPublish: true
       projects: src/${{ parameters.SolutionBaseName }}.Functions.ProcessLearners/${{ parameters.SolutionBaseName }}.Functions.ProcessLearners.csproj
       arguments: '--configuration $(buildConfiguration) --output $(build.artifactstagingdirectory)/publish --no-restore --no-build'
 
@@ -31,6 +32,7 @@ jobs:
     inputs:
       command: publish
       publishWebProjects: false
+      zipAfterPublish: true
       projects: src/${{ parameters.SolutionBaseName }}.Functions.Approvals/${{ parameters.SolutionBaseName }}.Functions.Approvals.csproj
       arguments: '--configuration $(buildConfiguration) --output $(build.artifactstagingdirectory)/publish --no-restore --no-build'
 
@@ -39,6 +41,7 @@ jobs:
     inputs:
       command: publish
       publishWebProjects: false
+      zipAfterPublish: true
       projects: src/${{ parameters.SolutionBaseName }}.Functions.RaiseEventsForExistingLearners/${{ parameters.SolutionBaseName }}.Functions.RaiseEventsForExistingLearners.csproj
       arguments: '--configuration $(buildConfiguration) --output $(build.artifactstagingdirectory)/publish --no-restore --no-build'
 
